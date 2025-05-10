@@ -31,6 +31,7 @@ export async function getStaticProps() {
 
 import WordCloud from '../components/WordCloud';
 import GitHubBanner from '../components/GitHubBanner';
+import JokeCard from '../components/JokeCard';
 
 const Home: NextPage<{ jokes: Joke[] }> = ({ jokes }) => {
   const scrollToJoke = (topic: string) => {
@@ -61,51 +62,20 @@ const Home: NextPage<{ jokes: Joke[] }> = ({ jokes }) => {
       <main className={styles.main}>
         <h1 className={styles.title}>two problems</h1>
         {jokes.length > 0 && (
-          <div className={`${styles.card} ${styles.featured}`}>
-            <p>Some people, when confronted with a problem, think &quot;I know, I&apos;ll use <span>{jokes[0].topic}</span>.&quot;</p>
-            {jokes[0].punchlines.map((punchline, i) => (
-              <div key={i}>
-                <p><strong>{punchline.text}</strong></p>
-                {punchline.attribution && (
-                  <p>
-                    <em>
-                      {punchline.url ? (
-                        <a href={punchline.url} target="_blank" rel="noopener noreferrer">
-                          {punchline.attribution}
-                        </a>
-                      ) : (
-                        punchline.attribution
-                      )}
-                    </em>
-                  </p>
-                )}
-              </div>
-            ))}
-          </div>
+          <JokeCard 
+            topic={jokes[0].topic}
+            punchlines={jokes[0].punchlines}
+            isFeatured={true}
+          />
         )}
         <WordCloud topics={topics} onTopicClick={scrollToJoke} />
         <div className={styles.grid}>
           {jokes.slice(1).map((joke, index) => (
-            <div key={index} id={`joke-${joke.topic}`} className={styles.card}>
-              <p>Some people, when confronted with a problem, think &quot;I know, I&apos;ll use <span>{joke.topic}</span>.&quot;</p>
-              {joke.punchlines.map((punchline, i) => (
-                <div key={i}>
-                  <p><strong>{punchline.text}</strong></p>
-                  {punchline.attribution && (
-                    <p>
-                      <em>
-                        {punchline.url ? (
-                          <a href={punchline.url} target="_blank" rel="noopener noreferrer">
-                            {punchline.attribution}
-                          </a>
-                        ) : (
-                          punchline.attribution
-                        )}
-                      </em>
-                    </p>
-                  )}
-                </div>
-              ))}
+            <div key={index} id={`joke-${joke.topic}`}>
+              <JokeCard 
+                topic={joke.topic}
+                punchlines={joke.punchlines}
+              />
             </div>
           ))}
         </div>
