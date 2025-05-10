@@ -7,12 +7,18 @@ jokes:
 
   - topic: "multithreading"
     punchlines:
-      - text: "Now twhey havbe thre preoblems."
-      - text: "Now they hav_   _e two problems."
+      - text: "then two they hav erpoblesms."
+        attribution: "Ned Batchelder"
+        url: "https://nedbatchelder.com/blog/201204/two_problems.html"
+      - text: "Nothhw tpe yawrve o oblems."
+        attribution: "Eiríkr Åsheim"
+        url: "https://nedbatchelder.com/blog/201204/two_problems.html"
 
   - topic: "Java"
     punchlines:
       - text: "Now they have a ProblemFactory."
+        attribution: "Chris Lonnen"
+        url: "https://nedbatchelder.com/blog/201204/two_problems.html"
       - text: "Now they have an AbstractProblemFactoryBean."
 
   - topic: "microservices"
@@ -40,7 +46,6 @@ jokes:
 
   - topic: "TypeScript"
     punchlines:
-      - text: "Now they have type problems."
       - text: "Now they have Promise<Problem<T>>."
 
   - topic: "NoSQL"
@@ -56,11 +61,9 @@ jokes:
   - topic: "git"
     punchlines:
       - text: "Now they have merge conflicts."
-      - text: "Now they have detached HEAD problems."
 
   - topic: "serverless"
     punchlines:
-      - text: "Now they have cold start problems."
       - text: "Now they pay per problem."
 
   - topic: "GraphQL"
@@ -91,7 +94,6 @@ jokes:
   - topic: "vim"
     punchlines:
       - text: "Now they can't exit from their problems."
-      - text: "Now their problems are in normal mode."
 
   - topic: "CSS"
     punchlines:
@@ -106,22 +108,14 @@ jokes:
   - topic: "MongoDB"
     punchlines:
       - text: "Now their problems are Web Scale."
-      - text: "Now they have unstructured problems."
 
   - topic: "OAuth"
     punchlines:
-      - text: "Now they have authentication problems."
       - text: "Now their problems need constant refreshing."
 
   - topic: "Flutter"
     punchlines:
-      - text: "Now they have widget problems."
       - text: "Now their problems are cross-platform."
-
-  - topic: "Jenkins"
-    punchlines:
-      - text: "Now they have pipeline problems."
-      - text: "Now their problems need continuous deployment."
 
   - topic: "Arduino"
     punchlines:
@@ -135,15 +129,24 @@ jokes:
 
   - topic: "Safari"
     punchlines:
-      - text: "Now they have webkit-specific problems."
       - text: "Now their problems only work in Chrome."
 
   - topic: "Ruby"
     punchlines:
-      - text: "Now everything is a problem."
       - text: "Now their problems are all elegant."
 
   - topic: "npm"
     punchlines:
       - text: "Now they have dependency problems."
-      - text: "Now they have node_modules full of problems."
+
+  - topic: "binary"
+    punchlines:
+      - text: "Now they have 10 problems."
+        attribution: "Ned Batchelder"
+        url: "https://nedbatchelder.com/blog/201204/two_problems.html"
+
+  - topic: "floating point arithmetic"
+    punchlines:
+      - text: "Now they have 1.999999999997 problems."
+        attribution: "Tom Scott"
+        url: "https://nedbatchelder.com/blog/201204/two_problems.html"
