@@ -1,7 +1,7 @@
 
-import type { NextPage } from "next";
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 import yaml from 'js-yaml';
 import fs from 'fs';
 import path from 'path';
@@ -52,7 +52,7 @@ const Home: NextPage<{ jokes: Joke[] }> = ({ jokes }) => {
         <h1 className={styles.title}>two problems</h1>
         {jokes.length > 0 && (
           <div className={`${styles.card} ${styles.featured}`}>
-            <p>Some people, when confronted with a problem, think "I know, I'll use <span>{jokes[0].topic}</span>."</p>
+            <p>Some people, when confronted with a problem, think &quot;I know, I&apos;ll use <span>{jokes[0].topic}</span>.&quot;</p>
             {jokes[0].punchlines.map((punchline, i) => (
               <div key={i}>
                 <p><strong>{punchline.text}</strong></p>
@@ -77,7 +77,7 @@ const Home: NextPage<{ jokes: Joke[] }> = ({ jokes }) => {
         <div className={styles.grid}>
           {jokes.slice(1).map((joke, index) => (
             <div key={index} id={`joke-${joke.topic}`} className={styles.card}>
-              <p>Some people, when confronted with a problem, think "I know, I'll use <span>{joke.topic}</span>."</p>
+              <p>Some people, when confronted with a problem, think &quot;I know, I&apos;ll use <span>{joke.topic}</span>.&quot;</p>
               {joke.punchlines.map((punchline, i) => (
                 <div key={i}>
                   <p><strong>{punchline.text}</strong></p>
