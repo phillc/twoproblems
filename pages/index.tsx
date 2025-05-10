@@ -37,6 +37,14 @@ const Home: NextPage<{ jokes: Joke[] }> = ({ jokes }) => {
     const jokeElement = document.getElementById(`joke-${topic}`);
     if (jokeElement) {
       jokeElement.scrollIntoView({ behavior: 'smooth' });
+      // Remove highlight from all cards first
+      document.querySelectorAll(`.${styles.card}`).forEach(card => {
+        card.classList.remove(styles.highlighted);
+      });
+      // Add highlight to selected card
+      setTimeout(() => {
+        jokeElement.classList.add(styles.highlighted);
+      }, 500); // Wait for scroll to complete
     }
   };
 
