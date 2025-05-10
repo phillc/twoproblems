@@ -1,0 +1,25 @@
+
+.wordCloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.topic {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(78, 205, 196, 0.3);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  color: #4ecdc4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.topic:hover {
+  background: rgba(78, 205, 196, 0.2);
+  transform: translateY(-2px);
+}
