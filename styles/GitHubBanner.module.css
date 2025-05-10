@@ -1,0 +1,19 @@
+.githubBanner {
+  position: fixed;
+  top: 40px;
+  right: -60px;
+  background: #ff6b6b;
+  color: white;
+  text-decoration: none;
+  padding: 8px 50px;
+  font-family: -apple-system, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  transform: rotate(45deg);
+  transform-origin: center;
+  transition: background 0.3s;
+}
+
+.githubBanner:hover {
+  background: #ff8f8f;
+}

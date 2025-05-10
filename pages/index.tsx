@@ -30,6 +30,7 @@ export async function getStaticProps() {
 }
 
 import WordCloud from '../components/WordCloud';
+import GitHubBanner from '../components/GitHubBanner';
 
 const Home: NextPage<{ jokes: Joke[] }> = ({ jokes }) => {
   const scrollToJoke = (topic: string) => {
@@ -42,6 +43,7 @@ const Home: NextPage<{ jokes: Joke[] }> = ({ jokes }) => {
   const topics = jokes.slice(1).map(joke => joke.topic);
   return (
     <div className={styles.container}>
+      <GitHubBanner />
       <Head>
         <title>two problems</title>
         <meta name="description" content="Problems on problems" />
