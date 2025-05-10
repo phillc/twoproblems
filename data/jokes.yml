@@ -1,0 +1,149 @@
+jokes:
+  - topic: "regular expressions"
+    punchlines: 
+      - text: "Now they have two problems."
+        attribution: "- Jamie Zawinski"
+        url: "http://regex.info/blog/2006-09-15/247"
+
+  - topic: "multithreading"
+    punchlines:
+      - text: "Now twhey havbe thre preoblems."
+      - text: "Now they hav_   _e two problems."
+
+  - topic: "Java"
+    punchlines:
+      - text: "Now they have a ProblemFactory."
+      - text: "Now they have an AbstractProblemFactoryBean."
+
+  - topic: "microservices"
+    punchlines:
+      - text: "Now they have 99 problems and monitoring is all of them."
+      - text: "Now they have a distributed system of problems."
+
+  - topic: "blockchain"
+    punchlines:
+      - text: "Now they have two problems, immutably recorded forever."
+
+  - topic: "machine learning"
+    punchlines:
+      - text: "Now they can't explain why they have two problems."
+      - text: "Now they have a 99.9% confidence level that they have two problems."
+
+  - topic: "XML"
+    punchlines:
+      - text: "Now they have a problem description document."
+
+  - topic: "Docker"
+    punchlines:
+      - text: "Now they have two problems, perfectly isolated from each other."
+      - text: "Now they have the same problem in three different environments."
+
+  - topic: "TypeScript"
+    punchlines:
+      - text: "Now they have type problems."
+      - text: "Now they have Promise<Problem<T>>."
+
+  - topic: "NoSQL"
+    punchlines:
+      - text: "Now they have eventually consistent problems."
+      - text: "Now they have {problems: 2, scaling: 'horizontal'}."
+
+  - topic: "Kubernetes"
+    punchlines:
+      - text: "Now they have problems orchestrated across multiple clusters."
+      - text: "Now they have pods of problems."
+
+  - topic: "git"
+    punchlines:
+      - text: "Now they have merge conflicts."
+      - text: "Now they have detached HEAD problems."
+
+  - topic: "serverless"
+    punchlines:
+      - text: "Now they have cold start problems."
+      - text: "Now they pay per problem."
+
+  - topic: "GraphQL"
+    punchlines:
+      - text: "Now they have nested problems."
+      - text: "Now they can query their problems efficiently."
+
+  - topic: "WebAssembly"
+    punchlines:
+      - text: "Now they have problems at near-native speed."
+      - text: "Now they have problems in multiple languages at once."
+
+  - topic: "agile"
+    punchlines:
+      - text: "Now they have two-week sprints of problems."
+      - text: "Now they have daily standups about their problems."
+
+  - topic: "quantum computing"
+    punchlines:
+      - text: "Now they have problems in superposition."
+      - text: "Now they're not sure if they have problems until they measure them."
+
+  - topic: "Web3"
+    punchlines:
+      - text: "Now they have decentralized problems."
+      - text: "Now they have problems stored on the blockchain forever."
+
+  - topic: "vim"
+    punchlines:
+      - text: "Now they can't exit from their problems."
+      - text: "Now their problems are in normal mode."
+
+  - topic: "CSS"
+    punchlines:
+      - text: "Now they have floating problems."
+      - text: "Now their problems need !important."
+
+  - topic: "AWS"
+    punchlines:
+      - text: "Now they have problems in multiple availability zones."
+      - text: "Now their problems auto-scale."
+
+  - topic: "MongoDB"
+    punchlines:
+      - text: "Now their problems are Web Scale."
+      - text: "Now they have unstructured problems."
+
+  - topic: "OAuth"
+    punchlines:
+      - text: "Now they have authentication problems."
+      - text: "Now their problems need constant refreshing."
+
+  - topic: "Flutter"
+    punchlines:
+      - text: "Now they have widget problems."
+      - text: "Now their problems are cross-platform."
+
+  - topic: "Jenkins"
+    punchlines:
+      - text: "Now they have pipeline problems."
+      - text: "Now their problems need continuous deployment."
+
+  - topic: "Arduino"
+    punchlines:
+      - text: "Now they have hardware problems."
+      - text: "Now their problems need proper grounding."
+
+  - topic: "Bitcoin"
+    punchlines:
+      - text: "Now they have proof-of-problems."
+      - text: "Now their problems consume massive energy."
+
+  - topic: "Safari"
+    punchlines:
+      - text: "Now they have webkit-specific problems."
+      - text: "Now their problems only work in Chrome."
+
+  - topic: "Ruby"
+    punchlines:
+      - text: "Now everything is a problem."
+      - text: "Now their problems are all elegant."
+
+  - topic: "npm"
+    punchlines:
+      - text: "Now they have dependency problems."
+      - text: "Now they have node_modules full of problems."
