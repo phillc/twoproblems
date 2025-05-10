@@ -39,11 +39,27 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  column-count: 3;
+  column-gap: 1.5rem;
   width: 100%;
   max-width: 1200px;
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    column-count: 1;
+  }
+}
+
+.grid > div {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
 }
 
 .card {
