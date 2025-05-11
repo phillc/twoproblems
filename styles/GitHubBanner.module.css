@@ -2,6 +2,7 @@
   position: fixed;
   top: 40px;
   right: -60px;
+  z-index: 0;
   background: #ff6b6b;
   color: white;
   text-decoration: none;
