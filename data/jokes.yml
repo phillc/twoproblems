@@ -127,6 +127,11 @@ jokes:
       - text: "Now they have proof-of-problems."
       - text: "Now their problems consume massive energy."
 
+  - topic: "large language models"
+    punchlines:
+      - text: "Now they're 87% confident they have two problems, but they hallucinated three more."
+      - text: "Now their problems are token-limited and need context windows."
+
   - topic: "Safari"
     punchlines:
       - text: "Now their problems only work in Chrome."
