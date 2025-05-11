@@ -1,6 +1,7 @@
 
 import React from 'react';
 import styles from '../styles/Home.module.css';
+import confetti from 'canvas-confetti';
 
 type Punchline = {
   text: string;
@@ -21,6 +22,13 @@ const JokeCard: React.FC<JokeProps> = ({ topic, punchlines, isFeatured = false }
     navigator.clipboard.writeText(text).then(() => {
       element.classList.add(styles.copied);
       setTimeout(() => element.classList.remove(styles.copied), 1000);
+      
+      // Trigger confetti
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: event.clientY / window.innerHeight, x: event.clientX / window.innerWidth }
+      });
     });
   };
 
