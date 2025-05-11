@@ -45,6 +45,7 @@
   column-gap: 1.5rem;
   width: 100%;
   max-width: 1200px;
+  padding-top: 1rem;
 }
 
 @media (max-width: 1000px) {
@@ -62,6 +63,8 @@
 .grid > div {
   break-inside: avoid;
   margin-bottom: 1.5rem;
+  display: inline-block;
+  width: 100%;
 }
 
 .card {
