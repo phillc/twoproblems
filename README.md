@@ -13,7 +13,7 @@ We welcome contributions! To add a new programming joke:
   - topic: "your programming topic"
     punchlines:
       - text: "your punchline"
-        attribution: "- Optional Author Name" # optional
+        attribution: "Optional Author Name" # optional
         url: "https://optional-source-url" # optional
 ```
 3. Create a pull request
