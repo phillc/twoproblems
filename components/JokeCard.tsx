@@ -22,7 +22,7 @@ type JokeProps = {
   isFeatured?: boolean;
 };
 
-const JokeCard: React.FC<JokeProps> = ({ topic, punchlines, children, isFeatured = false }) => {
+const JokeCard: React.FC<JokeProps> = ({ topic, punchlines, isFeatured = false, children }) => {
   const [showChildren, setShowChildren] = useState(false);
 
   const copyToClipboard = (event: React.MouseEvent<HTMLDivElement>, punchline: Punchline) => {
@@ -85,8 +85,9 @@ const JokeCard: React.FC<JokeProps> = ({ topic, punchlines, children, isFeatured
                   key={index}
                   topic={child.topic}
                   punchlines={child.punchlines}
-                  children={child.children}
-                />
+                >
+                  {child.children}
+                </JokeCard>
               ))}
             </div>
           )}
