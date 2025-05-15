@@ -55,8 +55,13 @@ const Home: NextPage<{ jokes: Joke[] }> = ({ jokes }) => {
     <div className={styles.container}>
       <GitHubBanner />
       <Head>
-        <title>two problems</title>
-        <meta name="description" content="Problems on problems" />
+        <title>two problems - Programming Jokes Collection</title>
+        <meta name="description" content="A curated collection of programming jokes and humor for developers" />
+        <meta name="keywords" content="programming jokes, developer humor, coding jokes" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="two problems - Programming Jokes Collection" />
+        <meta property="og:description" content="A curated collection of programming jokes and humor for developers" />
+        <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
