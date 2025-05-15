@@ -35,10 +35,20 @@ import GitHubBanner from '../components/GitHubBanner';
 import JokeCard from '../components/JokeCard';
 
 const Home: NextPage<{ jokes: Joke[] }> = ({ jokes }) => {
+  React.useEffect(() => {
+    // Check for hash in URL on page load
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      scrollToJoke(decodeURIComponent(hash));
+    }
+  }, []);
+
   const scrollToJoke = (topic: string) => {
     const jokeElement = document.getElementById(`joke-${topic}`);
     if (jokeElement) {
       jokeElement.scrollIntoView({ behavior: 'smooth' });
+      // Update URL hash without triggering scroll
+      window.history.pushState(null, '', `#${encodeURIComponent(topic)}`);
       // Remove highlight from all cards first
       document.querySelectorAll(`.${styles.card}`).forEach(card => {
         card.classList.remove(styles.highlighted);
