@@ -76,8 +76,9 @@ const Home: NextPage<{ jokes: Joke[] }> = ({ jokes }) => {
               <JokeCard 
                 topic={joke.topic}
                 punchlines={joke.punchlines}
-                children={joke.children}
-              />
+              >
+                {joke.children}
+              </JokeCard>
             </div>
           ))}
         </div>
