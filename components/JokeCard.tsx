@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Home.module.css';
 import confetti from 'canvas-confetti';
 
@@ -9,13 +9,22 @@ type Punchline = {
   url?: string;
 };
 
+type Joke = {
+  topic: string;
+  punchlines: Punchline[];
+  children?: Joke[];
+};
+
 type JokeProps = {
   topic: string;
   punchlines: Punchline[];
+  children?: Joke[];
   isFeatured?: boolean;
 };
 
-const JokeCard: React.FC<JokeProps> = ({ topic, punchlines, isFeatured = false }) => {
+const JokeCard: React.FC<JokeProps> = ({ topic, punchlines, children, isFeatured = false }) => {
+  const [showChildren, setShowChildren] = useState(false);
+
   const copyToClipboard = (event: React.MouseEvent<HTMLDivElement>, punchline: Punchline) => {
     const element = event.currentTarget;
     const text = `When confronted with a problem, some people think "I know, I'll use ${topic}."\n${punchline.text}`;
@@ -23,7 +32,6 @@ const JokeCard: React.FC<JokeProps> = ({ topic, punchlines, isFeatured = false }
       element.classList.add(styles.copied);
       setTimeout(() => element.classList.remove(styles.copied), 1000);
       
-      // Trigger confetti
       confetti({
         particleCount: 100,
         spread: 70,
@@ -62,6 +70,28 @@ const JokeCard: React.FC<JokeProps> = ({ topic, punchlines, isFeatured = false }
           )}
         </div>
       ))}
+      {children && children.length > 0 && (
+        <div>
+          <button 
+            className={styles.showMoreButton}
+            onClick={() => setShowChildren(!showChildren)}
+          >
+            {showChildren ? 'Hide Related Topics' : 'Show Related Topics'}
+          </button>
+          {showChildren && (
+            <div className={styles.childrenContainer}>
+              {children.map((child, index) => (
+                <JokeCard 
+                  key={index}
+                  topic={child.topic}
+                  punchlines={child.punchlines}
+                  children={child.children}
+                />
+              ))}
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 };

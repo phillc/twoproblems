@@ -15,6 +15,7 @@ type Punchline = {
 type Joke = {
   topic: string;
   punchlines: Punchline[];
+  children?: Joke[];
 };
 
 export async function getStaticProps() {
@@ -75,6 +76,7 @@ const Home: NextPage<{ jokes: Joke[] }> = ({ jokes }) => {
               <JokeCard 
                 topic={joke.topic}
                 punchlines={joke.punchlines}
+                children={joke.children}
               />
             </div>
           ))}

@@ -7,19 +7,23 @@
   max-width: 800px;
   margin: 2rem auto;
   padding: 1rem;
+  position: relative;
+  z-index: 2;
 }
 
 .topic {
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(78, 205, 196, 0.1) 0%, rgba(255, 107, 107, 0.1) 100%);
   border: 1px solid rgba(78, 205, 196, 0.3);
   border-radius: 20px;
   padding: 0.5rem 1rem;
   color: #4ecdc4;
   cursor: pointer;
   transition: all 0.2s ease;
+  backdrop-filter: blur(5px);
 }
 
 .topic:hover {
-  background: rgba(78, 205, 196, 0.2);
+  background: linear-gradient(135deg, rgba(78, 205, 196, 0.2) 0%, rgba(255, 107, 107, 0.2) 100%);
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(78, 205, 196, 0.15);
 }

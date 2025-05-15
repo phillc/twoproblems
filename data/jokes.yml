@@ -2,8 +2,21 @@ jokes:
   - topic: "regular expressions"
     punchlines: 
       - text: "Now they have two problems."
-        attribution: "- Jamie Zawinski"
+        attribution: "Jamie Zawinski"
         url: "http://regex.info/blog/2006-09-15/247"
+
+  - topic: "blockchain"
+    punchlines:
+      - text: "Now they have two problems, immutably recorded forever."
+    children:
+      - topic: "Bitcoin"
+        punchlines:
+          - text: "Now they have proof-of-problems."
+          - text: "Now their problems consume massive energy."
+      - topic: "Web3"
+        punchlines:
+          - text: "Now they have decentralized problems."
+          - text: "Now they have problems stored on the blockchain forever."
 
   - topic: "multithreading"
     punchlines:
@@ -25,10 +38,6 @@ jokes:
     punchlines:
       - text: "Now they have 99 problems and monitoring is all of them."
       - text: "Now they have a distributed system of problems."
-
-  - topic: "blockchain"
-    punchlines:
-      - text: "Now they have two problems, immutably recorded forever."
 
   - topic: "machine learning"
     punchlines:
@@ -86,11 +95,6 @@ jokes:
       - text: "Now they have problems in superposition."
       - text: "Now they're not sure if they have problems until they measure them."
 
-  - topic: "Web3"
-    punchlines:
-      - text: "Now they have decentralized problems."
-      - text: "Now they have problems stored on the blockchain forever."
-
   - topic: "vim"
     punchlines:
       - text: "Now they can't exit from their problems."
@@ -122,28 +126,6 @@ jokes:
       - text: "Now they have hardware problems."
       - text: "Now their problems need proper grounding."
 
-  - topic: "Bitcoin"
-    punchlines:
-      - text: "Now they have proof-of-problems."
-      - text: "Now their problems consume massive energy."
-
-  - topic: "large language models"
-    punchlines:
-      - text: "Now they're 87% confident they have two problems, but they hallucinated three more."
-      - text: "Now their problems are token-limited and need context windows."
-
-  - topic: "Safari"
-    punchlines:
-      - text: "Now their problems only work in Chrome."
-
-  - topic: "Ruby"
-    punchlines:
-      - text: "Now their problems are all elegant."
-
-  - topic: "npm"
-    punchlines:
-      - text: "Now they have dependency problems."
-
   - topic: "binary"
     punchlines:
       - text: "Now they have 10 problems."
@@ -155,3 +137,20 @@ jokes:
       - text: "Now they have 1.999999999997 problems."
         attribution: "Tom Scott"
         url: "https://nedbatchelder.com/blog/201204/two_problems.html"
+
+  - topic: "Ruby"
+    punchlines:
+      - text: "Now their problems are all elegant."
+
+  - topic: "npm"
+    punchlines:
+      - text: "Now they have dependency problems."
+
+  - topic: "Safari"
+    punchlines:
+      - text: "Now their problems only work in Chrome."
+
+  - topic: "large language models"
+    punchlines:
+      - text: "Now they're 87% confident they have two problems, but they hallucinated three more."
+      - text: "Now their problems are token-limited and need context windows."
